@@ -1,4 +1,4 @@
 # Lotto
 lotto app
-google login by firebase 
-web crawling
+1. 구글 로그인 (파이어 베이스)
+2. 매주 동행복권 결과 및 관련 정보 데이터 파싱 
