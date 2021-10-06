@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="회원가입"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="30dp"
+                tools:layout_editor_absoluteX="124dp"
+                tools:layout_editor_absoluteY="526dp" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="50dp"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="이름"
+                        android:textSize="20sp"/>
+                    <EditText
+                        android:id="@+id/editname"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="이메일"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/editemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textEmailAddress" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="비밀번호"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/editpwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPassword" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="연락처"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/editphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="phone" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/registerbt"
+                android:backgroundTint="#BC8F8F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가입" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
